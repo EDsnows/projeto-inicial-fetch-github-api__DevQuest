@@ -6,8 +6,10 @@ const screen = {
         this.userProfile.innerHTML = `<div class="info">
                                         <img src="${user.avatarUrl}" alt="Foto do perfil do usuário" />
                                             <div class="data">
-                                            <h1>${user.name ?? 'Não possui nome cadastrado'}</h1>
-                                            <p>${user.bio ?? 'Não possui bio cadastrado'}</p>
+                                                <h1>${user.name ?? 'Não possui nome cadastrado'}</h1>
+                                                <p>${user.bio ?? 'Não possui bio cadastrado'}</p><br>
+                                                <p>👥 Seguidores: ${user.followers}</p>
+                                                <p>👥 seguindo: ${user.following}</p>
                                             </div>
                                     </div>`
         
