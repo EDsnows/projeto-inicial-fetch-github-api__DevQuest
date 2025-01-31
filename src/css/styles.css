@@ -148,6 +148,17 @@ main {
   color: #fff
 }
 
+/* EVENTOS */
+
+.container .profile-data .event ul li:not(:last-child){
+  padding-bottom: 15px;
+}
+
+.container .profile-data .event ul li span{
+  font-weight: 700;
+  margin-right: 10px;
+}
+
 .container .profile-data.hide{
   display: none;
 }
