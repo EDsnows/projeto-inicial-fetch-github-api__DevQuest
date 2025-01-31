@@ -28,7 +28,6 @@ const screen = {
         // eventos do usuário
         const filteredEventList = user.events.filter(event => event.type === 'PushEvent' || event.type === 'CreateEvent' );
 
-        console.log(filteredEventList)
         let listEventItens = '';
         filteredEventList.forEach(event => {
             const typeEvent = event.type;
