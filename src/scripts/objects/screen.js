@@ -16,7 +16,6 @@ const screen = {
         
         // repositórios do usuário
         let repositoriesItens = '';
-        console.log(user.repositories)
         user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}" target="_blank">${repo.name}<br><br><span>🍴 ${repo.forks}</span><span>⭐ ${repo.stargazers_count}</span><span>👀 ${repo.watchers}</span><span>👨‍💻 ${repo.language}</span></a></li>`);
 
         if(user.repositories.length > 0){
